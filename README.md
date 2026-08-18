@@ -2,6 +2,12 @@
 
 Technical Challenge for the HatchWorks AI Internship.
 
+## Live Application
+
+The application is publicly deployed on Render:
+
+https://cvparser-x16g.onrender.com
+
 ## Overview
 
 CV Parser & Reimagined Profile Viewer is a web application that allows users to upload a CV in PDF format, extract relevant information from the document, and display it in a redesigned professional profile.
