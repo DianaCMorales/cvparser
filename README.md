@@ -104,6 +104,7 @@ Examples include:
 - Key Skills
 - Habilidades
 - Habilidades Técnicas
+- Habilidades Tecnicas
 
 **Experience**
 - Professional Experience
@@ -183,6 +184,29 @@ If Maven is already installed:
 
 ```bash
 mvn spring-boot:run
+```
+
+## Automated Tests
+
+The project includes basic automated tests for the extraction logic using JUnit.
+
+The current test suite verifies:
+
+- Spring Boot application context loading.
+- Extraction from an English CV.
+- Extraction from a Spanish CV.
+- Fallback behavior when a field cannot be detected.
+
+Run the tests with Maven:
+
+```bash
+mvn test
+```
+
+Or on Windows using the included Maven Wrapper:
+
+```bash
+mvnw.cmd test
 ```
 
 ## Known Limitations
