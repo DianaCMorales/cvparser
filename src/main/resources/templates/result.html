@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Profile</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+    <div class="profile-container">
+
+        <!-- ENCABEZADO DEL PERFIL -->
+        <div class="profile-header">
+
+            <p class="profile-label">PROFESSIONAL PROFILE</p>
+
+            <h1 th:text="${cv.name}">
+                Name not detected
+            </h1>
+
+            <div class="contact-info">
+
+                <span th:text="${cv.email}">
+                    Email not detected
+                </span>
+
+                <span th:text="${cv.phone}">
+                    Phone not detected
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- EDUCACIÓN -->
+        
+        <div class="section-card">
+        <h2>Education</h2>
+
+        <p class="section-text" th:text="${cv.education}">
+        Education not detected
+        </p>
+        </div>
+
+        <!-- HABILIDADES -->
+        <div class="section-card">
+        <h2>Skills</h2>
+
+        <p class="section-text" th:text="${cv.skills}">
+        Skills not detected
+        </p>
+        </div>
+        <!-- EXPERIENCIA -->
+       
+        <div class="section-card">
+        <h2>Experience</h2>
+
+        <p class="section-text" th:text="${cv.experience}">
+            Experience not detected
+        </p>
+        </div>
+
+        
+        <div class="download-section">
+
+        <form action="/download" method="post">
+
+            
+        <input type="hidden" name="name" th:value="${cv.name}">
+        <input type="hidden" name="email" th:value="${cv.email}">
+        <input type="hidden" name="phone" th:value="${cv.phone}">
+        <input type="hidden" name="education" th:value="${cv.education}">
+        <input type="hidden" name="skills" th:value="${cv.skills}">
+        <input type="hidden" name="experience" th:value="${cv.experience}">
+            
+            
+        <button type="submit">
+        Download Profile PDF
+        </button>
+
+        </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

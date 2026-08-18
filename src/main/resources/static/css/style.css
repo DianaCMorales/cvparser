@@ -1,0 +1,162 @@
+body {
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+}
+
+.profile-container {
+    background-color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 16px;
+}
+.profile-header {
+    background-color: #1f2937;
+    color: white;
+    padding: 35px;
+    border-radius: 12px;
+    margin-bottom: 35px;
+}
+
+.profile-label {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.profile-header h1 {
+    font-size: 36px;
+    margin: 0 0 15px 0;
+}
+
+.contact-info {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.section-card {
+    background-color: #f9fafb;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #e5e7eb;
+}
+
+.section-card h2 {
+    margin-top: 0;
+    color: #1f2937;
+    font-size: 22px;
+}
+
+.section-text {
+    color: #4b5563;
+    line-height: 1.7;
+    white-space: pre-line;
+}
+.download-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.download-section button {
+    background-color: #1f2937;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.download-section button:hover {
+    background-color: #374151;
+}
+.upload-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f3f4f6;
+}
+
+.upload-card {
+    background-color: white;
+    width: 100%;
+    max-width: 700px;
+    padding: 45px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.upload-label {
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+.upload-card h1 {
+    font-size: 38px;
+    color: #1f2937;
+    margin-bottom: 15px;
+}
+
+.upload-description {
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.file-area {
+    border: 2px dashed #d1d5db;
+    border-radius: 14px;
+    padding: 30px;
+    margin-bottom: 25px;
+    background-color: #f9fafb;
+}
+
+.file-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 5px;
+}
+
+.file-help {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.file-area input[type="file"] {
+    width: 100%;
+    max-width: 420px;
+}
+
+.analyze-button {
+    background-color: #1f2937;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.analyze-button:hover {
+    background-color: #374151;
+}
+
+.error-message {
+    background-color: #fee2e2;
+    color: #991b1b;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}

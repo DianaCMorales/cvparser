@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Parser</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+    <div class="upload-page">
+
+        <div class="upload-card">
+
+            <p class="upload-label">AI-ASSISTED CV PARSER</p>
+
+            <h1>Transform your CV into a professional profile</h1>
+
+            <p class="upload-description">
+                Upload your résumé in PDF format and we will extract the most important information
+                to create a redesigned professional profile.
+            </p>
+
+            <p class="error-message"
+               th:if="${error}"
+               th:text="${error}">
+            </p>
+
+            <form action="/upload" method="post" enctype="multipart/form-data">
+
+                <div class="file-area">
+
+                    <p class="file-title">
+                        Upload your CV
+                    </p>
+
+                    <p class="file-help">
+                        PDF files supported
+                    </p>
+
+                    <input type="file"
+                           name="file"
+                           accept=".pdf"
+                           required>
+
+                </div>
+
+                <button class="analyze-button" type="submit">
+                    Analyze CV
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
